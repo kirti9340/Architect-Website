@@ -1,0 +1,132 @@
+.about1 {
+  height: 500px;
+  width: 100%;
+  background-image: url(./imgs/inpired\ design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.about1 b {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  font: bold;
+  position: relative;
+  top: 15rem;
+  left: 5rem;
+  font-size: 100px;
+  color: #3f3f3f;
+}
+#about {
+  margin-top: 3rem;
+}
+#about_profile {
+  width: 100%;
+  margin-top: 3rem ;
+  background-image: url(imgs/Interior-Design.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about_profile {
+  position: relative;
+  display: flex;
+  padding: 2rem 0rem;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #000;
+  opacity: 80%;
+  color: #fff;
+}
+.about_profile .profile {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  justify-items: center;
+}
+.number {
+  margin: 0.5rem;
+  font: bold;
+  font-size: larger;
+}
+#projects{
+  margin-top: 3rem;
+}
+/* team section */
+.team {
+  position: relative;
+  align-items: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+.team b {
+  font-size: 50px;
+}
+.team_members {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 3rem;
+}
+.team_member1 {
+  background-color: #dfdad7;
+}
+.team_member1 img {
+  width: 100%;
+}
+.team_member1 h4 {
+  margin-top: 1rem;
+}
+.team_member1 p {
+  color: rgb(255, 115, 0);
+  margin-bottom: 1rem;
+}
+footer{
+  margin-top: 3rem;
+}
+
+/* responsive design */
+@media screen and (width < 650px) {
+  .about1 {
+    width: 100%;
+    height: 300px;
+  }
+  .about1 b {
+    top: 10rem;
+    left: 50px;
+    font-size: 50px;
+  }
+  
+  .about_profile {
+    /* padding: 2rem; */
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    gap: 2rem;
+  }
+
+  .team_members {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+  .about1 {
+    height: 400px;
+    width: 100%;
+  }
+  .about1 b {
+    top: 150px;
+    left: 80px;
+    font-size: 80px;
+  }
+  .team_members {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+  }
+}
